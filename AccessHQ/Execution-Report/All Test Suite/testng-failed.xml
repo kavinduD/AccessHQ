@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [All Test Suite]">
+  <listeners>
+    <listener class-name="com.accesshq.web.utils.listners.TestListener"/>
+    <listener class-name="com.accesshq.web.utils.listners.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="5" name="AccessHQ(failed)">
+    <classes>
+      <class name="com.accesshq.web.tests.TestSuite">
+        <methods>
+          <include name="setUp"/>
+          <include name="tc_02" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="tc_01" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.accesshq.web.tests.TestSuite -->
+    </classes>
+  </test> <!-- AccessHQ(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
